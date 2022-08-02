@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from "../components/Header.vue";
-import SignUpFormVue from "@/components/SignUpForm.vue";
+import SignUpForm from "../components/SignUpForm.vue";
 </script>
 
 <template>

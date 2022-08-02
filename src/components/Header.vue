@@ -2,7 +2,7 @@
   <el-header>
     <el-menu
       :default-active="activeIndex"
-      class="el-menu-demo"
+      class="sg-header--menu"
       mode="horizontal"
       :ellipsis="false"
       @select="handleSelect"
@@ -19,12 +19,12 @@
         <el-menu-item index="2">SignUp</el-menu-item>
       </RouterLink>
 
-      <el-sub-menu index="3">
+      <!-- <el-sub-menu index="3">
         <template #title>Workspace</template>
         <el-menu-item index="3-1">item one</el-menu-item>
         <el-menu-item index="3-2">item two</el-menu-item>
         <el-menu-item index="3-3">item three</el-menu-item>
-      </el-sub-menu>
+      </el-sub-menu> -->
     </el-menu>
   </el-header>
 </template>
@@ -32,7 +32,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-const activeIndex = ref("1");
+const activeIndex = ref("0");
 const handleSelect = (key: string, keyPath: string[]) => {
   console.log(key, keyPath);
 };
@@ -41,5 +41,8 @@ const handleSelect = (key: string, keyPath: string[]) => {
 <style>
 .flex-grow {
   flex-grow: 1;
+}
+.sg-header--menu {
+    width: 80vw;
 }
 </style>
